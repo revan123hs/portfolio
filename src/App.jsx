@@ -76,7 +76,7 @@ const PROJECTS = [
       'HTML, CSS və JavaScript ilə hazırlanmış interaktiv burger shop layihəsi. Burger constructor, səbət sistemi və responsive dizayn daxildir.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     github: 'https://github.com/revan123hs/burger-vision',
-    demo: '#',
+    demo: 'https://burger-vision-ssbh.vercel.app/',
     image:
       'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80'
   },
@@ -87,7 +87,7 @@ const PROJECTS = [
       'React və JavaScript ilə hazırlanmış müasir e-commerce layihəsi. Responsive istifadəçi interfeysi və məhsul əsaslı alış-veriş təcrübəsi.',
     tech: ['React', 'JavaScript', 'Tailwind CSS', 'Next.js'],
     github: 'https://github.com/revan123hs/ecommerce-project',
-    demo: '#',
+    demo: 'https://chicx-seven.vercel.app/',
     image:
       'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80'
   },
@@ -988,15 +988,14 @@ export default function App() {
                       </a>
 
                       {project.demo !== '#' && (
-                        <a
-                          href={project.demo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 text-sm text-cyan-400 hover:bg-cyan-500/20 transition-all"
-                        >
-                          Live Demo
-                          <ExternalLink size={16} />
-                        </a>
+                    <a
+  href={project.demo}
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 text-sm text-cyan-400 hover:bg-cyan-500/20 transition-all"
+>
+  Live Demo
+  <ExternalLink size={16} />
+</a>
                       )}
 
                     </div>
